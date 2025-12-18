@@ -51,6 +51,8 @@ get:
             message: "Invalid slot: current"
     "500":
       $ref: '../../../beacon-node-oapi.yaml#/components/responses/InternalError'
+    "503":
+      $ref: '../../../beacon-node-oapi.yaml#/components/responses/CurrentlySyncing'
 
 post:
   operationId: submitPoolAttestationsV2
